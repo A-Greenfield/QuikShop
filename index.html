@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuikShop | One-Tap Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+    <header><h1>QuikShop</h1></header>
+
+    <div class="container">
+        <section class="product-grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product">
+                <h3>Premium Widget</h3>
+                <p>$25.00</p>
+                <button class="btn-add" onclick="addToCart('Premium Widget', 25)">Add To Cart</button>
+            </div>
+            </section>
+
+        <aside id="checkout-panel">
+            <h3>Checkout</h3>
+            <div id="cart-items"></div>
+            <hr>
+            <input type="text" id="cust-name" placeholder="Full Name">
+            <input type="email" id="cust-email" placeholder="Email">
+            <input type="text" id="cust-phone" placeholder="WhatsApp Number Prefered">
+            <textarea id="cust-address" placeholder="Delivery Address"></textarea>
+            
+            <div class="total-box">
+                <p>Total: $<span id="total-price">0</span></p>
+                <button id="pay-button" onclick="initiatePayment()">Pay & Confirm</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

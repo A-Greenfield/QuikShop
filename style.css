@@ -1,0 +1,22 @@
+/* General Layout */
+body { font-family: 'Inter', sans-serif; background: #f4f7f6; margin: 0; color: #333; }
+header { background: #000; color: #fff; padding: 20px; text-align: center; }
+
+.container { display: flex; flex-wrap: wrap; padding: 20px; gap: 20px; max-width: 1200px; margin: 0 auto; }
+
+/* Product Grid */
+.product-grid { flex: 2; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+.card:hover { transform: translateY(-5px); }
+.card img { max-width: 100%; border-radius: 8px; margin-bottom: 10px; }
+.btn-add { background: #25D366; color: white; border: none; padding: 12px; width: 100%; cursor: pointer; border-radius: 8px; font-weight: bold; }
+
+/* Checkout Panel */
+#checkout-panel { flex: 1; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); min-width: 320px; height: fit-content; position: sticky; top: 20px; }
+input, textarea { width: 100%; margin-bottom: 12px; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
+#pay-button { background: #000; color: #fff; width: 100%; padding: 16px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; }
+
+/* Success Page UI */
+.success-container { max-width: 500px; margin: 80px auto; text-align: center; background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.checkmark-circle { width: 80px; height: 80px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+.checkmark { width: 20px; height: 40px; border: solid white; border-width: 0 6px 6px 0; transform: rotate(45deg); }
